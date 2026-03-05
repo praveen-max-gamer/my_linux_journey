@@ -1,0 +1,14 @@
+== How to run :
+* Install tkinter on the host PC.
+** sudo apt update && sudo apt install python3-tk
+
+* Test if Tkinter works,
+** `python3 -m tkinter`
+
+* Run the `TemplateMatcherViewer.py` first. 
+** uv run --with pillow --python "$(which python3)" TemplateMatcherViewer.py 
+** *NOTE :* Use only the host's Python since thats where tkinter resides not in UV !
+
+* Run the bash script `image_dumper.sh`
+	
+* Now, the images are pushed into the named-pipe and displayed in the tkinter app
